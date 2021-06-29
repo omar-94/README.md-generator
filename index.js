@@ -24,7 +24,7 @@ const generateREADME = (answers) =>
 ## Usage
     ${answers.usage}
 
-    ![alt text](assets/images/${answers.imageFileName}
+    ![Screenshot](assets/images/${answers.imageFileName})
 
 ## Credits
     ${answers.collaborators}
@@ -55,8 +55,13 @@ const promptUser = () => {
 		{
 			type: 'input',
 			name: 'usage',
-			message: 'Provide instructions and examples for use. '
-		}
+			message: 'Provide instructions and examples for use. \n'
+		},
+		{
+			type: 'input',
+			name: 'imageFileName',
+			message: 'Screenshots are always a great way to show your application. Include the file name and extension of your screenshot located in your assets/images folder. (Example: image.jpg)'
+		},
 	]);
 }
 
