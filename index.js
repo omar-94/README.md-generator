@@ -7,13 +7,13 @@ const generateREADME = (answers) =>
 `# ${answers.title}
 
 ## Description
-    ${answers.description}
+  	${answers.description}
 
 ## Table of Contents
-    -[Installation] (#installation)
-    -[Usage] (#usage)
-    -[Credits] (#credits)
-    -[License] (#license)
+    -[Installation](#installation)
+    -[Usage](#usage)
+    -[Credits](#credits)
+    -[License](#license)
 
 ## Installation
     ${answers.installation}
@@ -37,8 +37,23 @@ inquirer
       {
         type: 'input',
         name: 'title',
-        message: 'What is the title of your project?',
-      }
+        message: 'What is the title of your project? \n',
+      },
+      {
+        type: 'input',
+        name: 'description',
+        message: 'Please provide a description of your project. Things to consider: \n 1. What was your motivation? \n 2. Why did you build this project? \n 3. What problem does it solve? \n 4. What did you learn? \n'
+      },
+			{
+				type: 'input',
+				name: 'installation',
+				message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development enviroment running. \n'
+			},
+			{
+				type: 'input',
+				name: 'usage',
+				message: 'Provide instructions and examples for use. '
+			}
     ])
 
     .then((answers) => {
