@@ -1,8 +1,10 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const writeFileAsync = util.promisify(fs.writeFile);
 
 
 // Function to generatet README.md file
+
 const generateREADME = (answers) =>
 `# ${answers.title}
 
@@ -56,10 +58,12 @@ inquirer
 			}
     ])
 
-    .then((answers) => {
-      const readMeContent = generateREADME(answers);
 
-      fs.writeFile('README.md', readMeContent, (err) =>
-        err ? console.log(err) : console.log('Succesfully created README.md file!')
-        );
-    });    
+const init = () => {
+	promptUser()
+		.then((answers) => writeFileAsync('README.md', generateREADME(answers)))
+		.then(() => console.log('Succesfully created README.md file!'))
+		.catch((err) => console.log(err));
+};
+
+init();
