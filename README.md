@@ -1,26 +1,26 @@
 # test
 
 ## Description
-  	test
+test
 
 ## Table of Contents
-    -[Installation](#installation)
-    -[Usage](#usage)
-    -[Credits](#credits)
-    -[License](#license)
-
+-[Installation](#installation)
+-[Usage](#usage)
+-[Credits](#credits)
+-[License](#license)
+	
 ## Installation
-    test
+test
 
 ## Usage
-    test
+test
 
-    ![Screenshot](assets/images/test.png)
+![Screenshot](./assets/images/test.png)
 
 ## Credits
-    undefined
-    undefined
-    undefined        
+undefined
+undefined
+undefined        
 
 ## License    
-    undefined
+undefined

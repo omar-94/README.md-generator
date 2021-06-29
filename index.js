@@ -10,29 +10,29 @@ const generateREADME = (answers) =>
 `# ${answers.title}
 
 ## Description
-  	${answers.description}
+${answers.description}
 
 ## Table of Contents
-    -[Installation](#installation)
-    -[Usage](#usage)
-    -[Credits](#credits)
-    -[License](#license)
-
+-[Installation](#installation)
+-[Usage](#usage)
+-[Credits](#credits)
+-[License](#license)
+	
 ## Installation
-    ${answers.installation}
+${answers.installation}
 
 ## Usage
-    ${answers.usage}
+${answers.usage}
 
-    ![Screenshot](assets/images/${answers.imageFileName})
+![Screenshot|50%](./assets/images/${answers.imageFileName})
 
 ## Credits
-    ${answers.collaborators}
-    ${answers.thirdPartyAssets}
-    ${answers.tutorials}        
+${answers.collaborators}
+${answers.thirdPartyAssets}
+${answers.tutorials}        
 
 ## License    
-    ${answers.license}
+${answers.license}
 `
 
 const promptUser = () => {
@@ -60,7 +60,7 @@ const promptUser = () => {
 		{
 			type: 'input',
 			name: 'imageFileName',
-			message: 'Screenshots are always a great way to show your application. Include the file name and extension of your screenshot located in your assets/images folder. (Example: image.jpg)'
+			message: 'Screenshots are always a great way to show your application. Include the file name and extension of your screenshot located in your assets/images folder. (Example: image.jpg) \n'
 		},
 	]);
 }
