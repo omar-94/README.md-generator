@@ -1,5 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const Choices = require('inquirer/lib/objects/choices');
 const util = require('util');
 
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -14,25 +15,25 @@ ${answers.description}
 
 ## Table of Contents
 -[Installation](#installation)
--[Usage](#usage)
+-[Usage and Test Instructions](#instructions)
 -[Credits](#credits)
 -[License](#license)
 	
 ## Installation
 ${answers.installation}
 
-## Usage
+## Usage and Test Instructions
 ${answers.usage}
 
-![Screenshot|50%](./assets/images/${answers.imageFileName})
+![Screenshot](./assets/images/${answers.imageFileName})
 
 ## Credits
+Collaborators:
 ${answers.collaborators}
-${answers.thirdPartyAssets}
-${answers.tutorials}        
 
-## License    
+## License:
 ${answers.license}
+
 `
 
 const promptUser = () => {
@@ -50,20 +51,47 @@ const promptUser = () => {
 		{
 			type: 'input',
 			name: 'installation',
-			message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development enviroment running. \n'
+			message: 'What are the steps required to install your project? Provide a description of how to get the development enviroment running. \n'
 		},
 		{
 			type: 'input',
 			name: 'usage',
-			message: 'Provide instructions and examples for use. \n'
+			message: 'Provide instructions on how to use your application. \n'
 		},
 		{
 			type: 'input',
 			name: 'imageFileName',
 			message: 'Screenshots are always a great way to show your application. Include the file name and extension of your screenshot located in your assets/images folder. (Example: image.jpg) \n'
 		},
+		{
+			type: 'input',
+			name: 'collaborators',
+			message: 'List your collaborators, if any, with links to their GitHub. \n'
+		},
+		{
+			type: 'list',
+			name: 'license',
+			message: 'Choose a license you would like to add for your application.',
+			choices: ['MIT License', 'GPL License', 'Apache License']
+		}
 	]);
 }
+
+// function renderLicenseBadge(answers) {
+// 	let licenseType = answers.license
+// 	let licenseBadge = ''
+
+// 	if(licenseType === 'MIT License') {
+// 		licenseBadge = `![License: MIT](https://img.shields.io/badge/license-MIT-blue)` 
+// 	} else if (licenseType === 'GPL License') {
+// 		licenseBadge = `![License: GPL](https://img.shields.io/badge/license-GPL-blue)` 
+// 	} else if (licenseType === 'Apache License') {
+// 		licenseBadge = `![License: GPL](https://img.shields.io/badge/license-Apache-blue)` 
+// 	}
+// 	return licenseBadge;
+// }
+
+// // renderLicenseBadge();
 
 const init = () => {
 	promptUser()

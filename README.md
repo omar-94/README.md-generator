@@ -1,26 +1,26 @@
 # test
 
 ## Description
-test
+tese
 
 ## Table of Contents
 -[Installation](#installation)
--[Usage](#usage)
+-[Usage and Test Instructions](#Usage-and-Test-Instructions)
 -[Credits](#credits)
 -[License](#license)
 	
 ## Installation
 test
 
-## Usage
+## Usage and Test Instructions
 test
 
 ![Screenshot](./assets/images/test.png)
 
 ## Credits
-undefined
-undefined
-undefined        
+Collaborators:
+test
 
-## License    
+## License:
 undefined
+
