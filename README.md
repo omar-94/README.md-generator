@@ -1,8 +1,8 @@
-# Test One
+# ReadMe Generator
 MIT License
 
 ## Description
-I am testing writing a description for this ReadMe Generator. Later on I will describe in more detail the functionality.
+Every great developer's project includes a 'README' with information that allows other developers to easily install, run, and test features on their end, while also acknowledging credit to contributors, tutorials, and software licenses.
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -12,23 +12,23 @@ I am testing writing a description for this ReadMe Generator. Later on I will de
 5. [Contact](#contact)
 	
 ## Installation
-I am writing a test of steps required to install project.
+-Install Node Package Manager (NPM) -Install Inquirer from Node Package Manager
 
 ## Usage and Test Instructions
-These are test instructions on using the application.
+To run ReadMe Generator: Open index.js file in terminal. Run 'node index.js'. Follow questionaire and README will generate.
 
-![Screenshot](./assets/images/test.png)
+![Screenshot](./assets/images/readme.png)
 
 ## Credits
 Collaborators:
-No collaborators at the moment.. or n/a.
+N/A
 
 ## License
 MIT License
 
 ## Contact
 If You have any questions or comments, you may contact me at:
-* github.com/omarnava-94
+* github.com/omar-94
 * enava23@yahoo.com
 
 
