@@ -19,6 +19,7 @@ ${answers.description}
 2. [Usage and Test Instructions](#instructions)
 3. [Credits](#credits)
 4. [License](#license)
+5. [Contact](#contact)
 	
 ## Installation
 ${answers.installation}
