@@ -9,15 +9,16 @@ const writeFileAsync = util.promisify(fs.writeFile);
 // Function to generate README.md file
 const generateREADME = (answers) =>
 `# ${answers.title}
+${answers.license}
 
 ## Description
 ${answers.description}
 
 ## Table of Contents
--[Installation](#installation)
--[Usage and Test Instructions](#instructions)
--[Credits](#credits)
--[License](#license)
+1. [Installation](#installation)
+2. [Usage and Test Instructions](#instructions)
+3. [Credits](#credits)
+4. [License](#license)
 	
 ## Installation
 ${answers.installation}
@@ -31,8 +32,14 @@ ${answers.usage}
 Collaborators:
 ${answers.collaborators}
 
-## License:
+## License
 ${answers.license}
+
+## Contact
+If You have any questions or comments, you may contact me at:
+* ${answers.gitHub}
+* ${answers.email}
+
 
 `
 
@@ -73,6 +80,16 @@ const promptUser = () => {
 			name: 'license',
 			message: 'Choose a license you would like to add for your application.',
 			choices: ['MIT License', 'GPL License', 'Apache License']
+		},
+		{
+			type: 'input',
+			name: 'gitHub',
+			message: 'In case of questions or comments, include your GitHub profile so other developers may reach out to you. \n'
+		},
+		{
+			type: 'input',
+			name: 'email',
+			message: 'Inluding your Email is another good way for them to reach out. \n'
 		}
 	]);
 }

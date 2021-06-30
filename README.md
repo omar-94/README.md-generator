@@ -1,13 +1,14 @@
 # test
+MIT License
 
 ## Description
-tese
+test
 
 ## Table of Contents
--[Installation](#installation)
--[Usage and Test Instructions](#Usage-and-Test-Instructions)
--[Credits](#credits)
--[License](#license)
+1. [Installation](#installation)
+2. [Usage and Test Instructions](#instructions)
+3. [Credits](#credits)
+4. [License](#license)
 	
 ## Installation
 test
@@ -21,6 +22,12 @@ test
 Collaborators:
 test
 
-## License:
-undefined
+## License
+MIT License
+
+## Contact
+If You have any questions or comments, you may contact me at:
+* test
+* test
+
 
